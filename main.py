@@ -23,7 +23,7 @@ print(len(words)) # Вывести на экран количество слов
 print(len("".join(words))) # Вывести на экран количество символов
 wordsdict = {}
 for word in words:
-    word = word.lower().strip('"').strip("(").strip("!").strip("«").rstrip("...»").strip(",")
+    word = word.lower().strip(".,!:)#'")
     if word not in wordsdict:
         wordsdict[word] = 1
     else:
